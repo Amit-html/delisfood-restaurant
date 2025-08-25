@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/navbar.css'; // Assuming you have a CSS file for styling
+import "../styles/navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +12,10 @@ function Navbar() {
       {/* Logo */}
       <div className="logo">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          alt="logo"
+          src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+          alt="DelisFood Logo"
         />
-        <h2>MyWebsite</h2>
+        <h2>DelisFood</h2>
       </div>
 
       {/* Hamburger */}
@@ -35,16 +35,19 @@ function Navbar() {
 
       {/* Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="#" onClick={handleLinkClick}>
+        <a href="#home" onClick={handleLinkClick}>
           Home
         </a>
-        <a href="#" onClick={handleLinkClick}>
-          About
+        <a href="#menu" onClick={handleLinkClick}>
+          Menu
         </a>
-        <a href="#" onClick={handleLinkClick}>
-          Services
+        <a href="#specials" onClick={handleLinkClick}>
+          Specials
         </a>
-        <a href="#" onClick={handleLinkClick}>
+        <a href="#reviews" onClick={handleLinkClick}>
+          Reviews
+        </a>
+        <a href="#contact" onClick={handleLinkClick}>
           Contact
         </a>
       </div>
@@ -53,5 +56,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
